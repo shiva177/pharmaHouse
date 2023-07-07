@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .contact_us * {
+        font-family: Nunito, sans-serif;
+      }
+
+      .contact_us a {
+        text-decoration-line: none;
+        text-decoration-thickness: initial;
+        text-decoration-style: initial;
+        text-decoration-color: initial;
+      }
+
+      .contact_us .text-blk {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        line-height: 25px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+
+      .contact_us input:focus {
+        outline-color: initial;
+        outline-style: none;
+        outline-width: initial;
+      }
+
+      .contact_us textarea:focus {
+        outline-color: initial;
+        outline-style: none;
+        outline-width: initial;
+      }
+
+      .contact_us .responsive-cell-block {
+        min-height: 75px;
+      }
+
+      .contact_us .responsive-container-block {
+        min-height: 75px;
+        height: fit-content;
+        width: 100%;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        justify-content: flex-start;
+      }
+
+      .contact_us .responsive-container-block.bigContainer {
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+      }
+
+      .contact_us .responsive-container-block.Container {
+        max-width: 1320px;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+      }
+
+      .contact_us .mainImg {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      .contact_us
+        .responsive-cell-block.wk-desk-7.wk-ipadp-8.wk-tab-12.wk-mobile-12 {
+        background-color: #333333;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+      }
+
+      .contact_us .text-blk.heading {
+        color: white;
+        font-size: 35px;
+        line-height: 48px;
+        font-weight: 800;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+      }
+
+      .contact_us #message {
+        width: 100%;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      .contact_us .emailArea {
+        width: 49%;
+      }
+
+      .contact_us .firstRow {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        width: 100%;
+      }
+
+      .contact_us .fullNameArea {
+        width: 49%;
+      }
+
+      .contact_us .cardHead {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        color: white;
+      }
+
+      .contact_us .submit {
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        background-image: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat-x: initial;
+        background-repeat-y: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: #00b2eb;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      .contact_us .formTable {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact_us .messageArea {
+        width: 100%;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+      }
+
+      .contact_us .fullName {
+        width: 100%;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      .contact_us .email {
+        width: 100%;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      @media (max-width: 1024px) {
+        .contact_us .firstRow {
+          flex-direction: column;
+        }
+
+        .contact_us .fullNameArea {
+          width: 100%;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 30px;
+          margin-left: 0px;
+        }
+
+        .contact_us .emailArea {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .contact_us .responsive-container-block.bigContainer {
+          padding-top: 10px;
+          padding-right: 20px;
+          padding-bottom: 10px;
+          padding-left: 20px;
+        }
+
+        .contact_us .responsive-container-block.Container {
+          padding-top: 0px;
+          padding-right: 0px;
+          padding-bottom: 0px;
+          padding-left: 0px;
+        }
+
+        .contact_us
+          .responsive-cell-block.wk-desk-7.wk-ipadp-8.wk-tab-12.wk-mobile-12 {
+          padding-top: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+        }
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap");
+
+      *,
+      *:before,
+      *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .wk-desk-1 {
+        width: 8.333333%;
+      }
+
+      .wk-desk-2 {
+        width: 16.666667%;
+      }
+
+      .wk-desk-3 {
+        width: 25%;
+      }
+
+      .wk-desk-4 {
+        width: 33.333333%;
+      }
+
+      .wk-desk-5 {
+        width: 41.666667%;
+      }
+
+      .wk-desk-6 {
+        width: 50%;
+      }
+
+      .wk-desk-7 {
+        width: 58.333333%;
+      }
+
+      .wk-desk-8 {
+        width: 66.666667%;
+      }
+
+      .wk-desk-9 {
+        width: 75%;
+      }
+
+      .wk-desk-10 {
+        width: 83.333333%;
+      }
+
+      .wk-desk-11 {
+        width: 91.666667%;
+      }
+
+      .wk-desk-12 {
+        width: 100%;
+      }
+
+      @media (max-width: 1024px) {
+        .wk-ipadp-1 {
+          width: 8.333333%;
+        }
+
+        .wk-ipadp-2 {
+          width: 16.666667%;
+        }
+
+        .wk-ipadp-3 {
+          width: 25%;
+        }
+
+        .wk-ipadp-4 {
+          width: 33.333333%;
+        }
+
+        .wk-ipadp-5 {
+          width: 41.666667%;
+        }
+
+        .wk-ipadp-6 {
+          width: 50%;
+        }
+
+        .wk-ipadp-7 {
+          width: 58.333333%;
+        }
+
+        .wk-ipadp-8 {
+          width: 66.666667%;
+        }
+
+        .wk-ipadp-9 {
+          width: 75%;
+        }
+
+        .wk-ipadp-10 {
+          width: 83.333333%;
+        }
+
+        .wk-ipadp-11 {
+          width: 91.666667%;
+        }
+
+        .wk-ipadp-12 {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .wk-tab-1 {
+          width: 8.333333%;
+        }
+
+        .wk-tab-2 {
+          width: 16.666667%;
+        }
+
+        .wk-tab-3 {
+          width: 25%;
+        }
+
+        .wk-tab-4 {
+          width: 33.333333%;
+        }
+
+        .wk-tab-5 {
+          width: 41.666667%;
+        }
+
+        .wk-tab-6 {
+          width: 50%;
+        }
+
+        .wk-tab-7 {
+          width: 58.333333%;
+        }
+
+        .wk-tab-8 {
+          width: 66.666667%;
+        }
+
+        .wk-tab-9 {
+          width: 75%;
+        }
+
+        .wk-tab-10 {
+          width: 83.333333%;
+        }
+
+        .wk-tab-11 {
+          width: 91.666667%;
+        }
+
+        .wk-tab-12 {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .wk-mobile-1 {
+          width: 8.333333%;
+        }
+
+        .wk-mobile-2 {
+          width: 16.666667%;
+        }
+
+        .wk-mobile-3 {
+          width: 25%;
+        }
+
+        .wk-mobile-4 {
+          width: 33.333333%;
+        }
+
+        .wk-mobile-5 {
+          width: 41.666667%;
+        }
+
+        .wk-mobile-6 {
+          width: 50%;
+        }
+
+        .wk-mobile-7 {
+          width: 58.333333%;
+        }
+
+        .wk-mobile-8 {
+          width: 66.666667%;
+        }
+
+        .wk-mobile-9 {
+          width: 75%;
+        }
+
+        .wk-mobile-10 {
+          width: 83.333333%;
+        }
+
+        .wk-mobile-11 {
+          width: 91.666667%;
+        }
+
+        .wk-mobile-12 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: pink">
+    <div class="contact_us">
+      <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <div
+            class="responsive-cell-block wk-desk-5 wk-ipadp-4 wk-tab-12 wk-mobile-12"
+          >
+            <img
+              class="mainImg"
+              src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Vd3bj2jPe/videoblocks-medicine-pills-and-tablet-macro-view-of-pharmaceutical-pills-health-care-treatment-close-up-of-tablets-and-capsules-background-healthcare-industry-antibiotic-pills-medicine-health-supplement_rrhagnp_x_thumbnail-1080_01.png"
+            />
+          </div>
+          <div
+            class="responsive-cell-block wk-desk-7 wk-ipadp-8 wk-tab-12 wk-mobile-12"
+          >
+            <p class="text-blk heading">Contact Us: "The Dark Knights"</p>
+            <form class="formTable" action="/contact" method="POST" id="izml" >
+              <div class="firstRow">
+                <div class="fullNameArea">
+                  <p class="cardHead">Full Name</p>
+                  <input
+                    class="fullName"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter full Name"
+                    type="text"
+                  />
+                </div>
+                <div class="emailArea">
+                  <p class="cardHead">Email Address</p>
+                  <input
+                    class="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email"
+                    type="email"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9]{2,}" required
+                  >
+                </div>
+              </div>
+              <div class="messageArea">
+                <p class="cardHead">Message</p>
+                <textarea
+                  class="message"
+                  cols="30"
+                  id="message"
+                  name="message"
+                  placeholder="Enter Message"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button class="submit" type="submit" onclick="sendUs()" id="w-c-s-bgc_p-1-dm-id-4">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // var emailInput = document.getElementById("email");
+      // emailInput.addEventListener("input", function (event) {
+      //   if (emailInput.validity.valid) {
+      //     emailInput.setCustomValidity("");
+      //   } else {
+      //     emailInput.setCustomValidity("Please enter a valid email address.");
+      //   }
+      // });
+        function sendUs(){
+         
+          alert("Successfully sent The message!");
+     
+        }
+      
+    </script>
+  </body>
+</html>

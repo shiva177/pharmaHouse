@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/assets/bootstrap.min.css">
+</head>
+<style type="text/css">
+  /* 
+#bgimage{ */
+  /* background-image: url(https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?b=1&k=20&m=517188688&s=612x612&w=0&h=x8h70-SXuizg3dcqN4oVe9idppdt8FUVeBFemfaMU7w=); */
+  /* background-image: url(/assets/images/medicine.png); */
+  /* background-image: url(/assets/images/pharmaHouse.jpg); */
+  /* background-image: url(/assets/images/phrma.jpeg);
+	background-size: cover;
+	border-radius: 10px; */
+  /* } */
+
+  .heading1 {
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+  label {
+    color: white;
+    font-family: sans-serif;
+  }
+
+  input[type=text],
+  input[type=Password] {
+    background: transparent;
+    color: white;
+    font-family: monospace;
+  }
+
+  input[type=text]::placeholder,
+  input[type=Password]::placeholder {
+    color: white;
+
+  }
+
+  .btn-success {
+    background: transparent;
+    transition: 0.5s ease;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-size: 15px;
+
+  }
+
+  a {
+    color: white;
+    transition: 0.3s ease;
+
+
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #ededed;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    opacity: 0.7;
+  }
+
+  .topnav a {
+    float: right;
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: -50px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav p {
+    color: black;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .topnav .active {
+    cursor: pointer;
+  }
+</style>
+
+<body background="/assets/images/phrma.jpeg">
+  <div class="topnav" style="background-color: lightskyblue;">
+    <a class="active" style="font-size: 31px;" onclick="openNav()">&#9776; </a>
+    <p style="padding: auto; margin-top: 20px; position:relative;">Welcome to Pharma House Login Page</p>
+    
+      <div style="justify-content: right;">
+
+        <a href="contact_us.html"><button class="btn btn-primary">Contact Us</button></a>
+        <a href="about.html"><button class="btn btn-primary">About</button></a>
+        <a href="search.html"><button class="btn btn-primary">Search</button></a>
+      </div>
+    </div>
+    <br><br>
+  <br><br>
+  <div class="container-fluid">
+    <div class="col-md-3"></div>
+
+
+    <div class="col-md-6">
+
+
+      <div id="bgimage">
+        <br><br>
+        <h1 class="heading1">Sign In</h1>
+        <br> <br><br><br>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6" style="margin-left: 5px;margin-right: 5px;">
+            <!-- <form> -->
+            <form method="post">
+              <div class="form-group">
+                <label>Username</label>
+                <!-- <input type="Email" name="Email" class="form-control" required=""   placeholder="Email" /> -->
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" autofocus>
+              </div>
+          </div>
+
+          <div class="col-md-3"></div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6" style="margin-left: 5px;margin-right: 5px;">
+            <div class="form-group">
+              <label>Password</label>
+              <!-- <input type="Password" name="pass" class="form-control" required="" placeholder="Password" /> -->
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+              <br><a href="/forgot_password.html"> Forget password?</a>
+            </div>
+
+
+            <div class="col-md-3"></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-2" style="margin-left: 5px;margin-right: 5px;"><br><br>
+              <button class="btn btn-success btn-block" type="Submit">Submit</button>
+            </div>
+
+
+            <div class="col-md-5"></div>
+          </div>
+          <br><br><br><br><br>
+          </form>
+        </div>
+
+
+
+        <div class="col-md-3"></div>
+
+
+      </div>
+
+    </div>
+
+</body>
+</html>
